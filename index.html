@@ -5,20 +5,68 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="css/reset.css" media="all">
     <link rel="stylesheet" type="text/css" href="css/grid.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/nivo-slider.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/nivo-slider-theme.css" media="all">
     <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.min.js"></script>
     <![endif]-->
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+        $(window).load(function() {
+            $('#slider').nivoSlider({
+                effect: "fade"
+            });
+        });
+    </script>
 </head>
 <body>
 
 <div class="container_12" id="main-container">
-    <header>
-        <div class="grid_2" id="logo-container">
-            <p>Hello</p>
-
+    <!-- Start header -->
+    <div class="grid_2" id="logo">
+        <header>
+            <a href="#"><img src="images/logo.jpg" border="0" alt="Shocoteam Logo" /></a>
+        </header>
+    </div>
+    <div class="push_4 grid_6" id="navigation">
+        <nav>
+            <ul>
+                <li class="active"><a href="#">НАЧАЛО</a></li>
+                <li><a href="#">ПРОДУКТИ</a></li>
+                <li><a href="#">ЗА НАС</a></li>
+                <li><a href="#">КОНТАКТИ</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- End of header -->
+    <div class="clear"></div>
+    <!-- Start Slider -->
+    <div class="slider-wrapper theme-default">
+        <div id="slider" class="nivoSlider">
+            <img src="images/slide1.jpg" alt="" />
+            <img src="images/slide2.jpg" alt="" />
+            <img src="images/slide3.jpg" alt="" />
+            <img src="images/slide4.jpg" alt="" />
+            <img src="images/slide5.jpg" alt="" />
+            <img src="images/slide6.jpg" alt="" />
+            <img src="images/slide7.jpg" alt="" />
+            <img src="images/slide8.jpg" alt="" />
+            <img src="images/slide9.jpg" alt="" />
         </div>
-    </header>
+    </div>
+    <!-- End Slider -->
+    <div class="grid_12"><br />
+        <p id="slogan">
+            ПОДБРАНИ СЪСТАВКИ ЗА ПО-ДОБЪР ВКУС<br />
+            <span>В момента продуктовата гама надхвърлят 30 продукта с различни вкусове и опаковки, съобразени с нуждите на пазара.</span>
+        </p>
+
+    </div>
+    <div class="clear"></div>
+
+
 </div>
 
 </body>
