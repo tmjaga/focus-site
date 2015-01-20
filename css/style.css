@@ -16,8 +16,35 @@ html {
     padding: 0;
 }
 
-.container_12 {
+#main-container {
     background-color: #AA8CBC;
+}
+
+.align-container{
+    width: 100%;
+}
+
+.iso-image
+{
+    text-align: center;
+    font-family: "comfortaaregular", Verdana, Arial, sans-serif;
+    font-size: 12px;
+    color: #414147;
+}
+.iso-image img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.table-container{
+    display: table;
+    margin-bottom: 5px;
+}
+
+.table-container div {
+    display: table-cell;
+    padding: 2px;
+    vertical-align: middle;
 }
 
 #logo {
@@ -55,6 +82,82 @@ nav ul li.active a, nav ul li a:hover {
     font-size: 22px;
     color: #414147;
 }
+
 #slogan span {
     font-size: 15px;
 }
+
+footer{
+    background-color: #3F3F44;
+    height: 40px;
+    line-height: 40px;
+}
+
+.copy-info
+{
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+    font-size: 10px;
+    color: #ffffff;
+    line-height: 10px;
+}
+
+.bottom-navigation li{
+    display: inline;
+    margin-right: 40px;
+}
+
+.bottom-navigation li a, .bottom-navigation li a:visited {
+    font-family: Arial, Verdana, helvetica, sans-serif;
+    font-size: 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.bottom-navigation li a:hover {
+    text-decoration: underline;
+}
+
+#contact-information{
+    background-color: #741472;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: #FFFFFF;
+}
+
+h4{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.about-short, .contact-short{
+    font-family: Tahoma, Arial, Verdana, helvetica, sans-serif;
+    font-size: 11px;
+}
+
+.about-short{
+    padding-left: 37px;
+}
+
+.btn-more{
+    height: 17px;
+    width: 70px;
+    padding-top: 5px;
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: url("../images/button_bg.jpg") repeat-x;
+    float: right;
+}
+
+.btn-more a, .btn-more a:hover, .btn-more a:visited{
+    font-family: Arial, Verdana, helvetica, sans-serif;
+    font-size: 11px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+span.icon{
+    font-size: 16px;
+}
+
+
