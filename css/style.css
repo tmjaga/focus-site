@@ -134,9 +134,6 @@ h4{
     font-size: 11px;
 }
 
-.about-short{
-    padding-left: 37px;
-}
 
 .btn-more{
     height: 17px;
@@ -160,4 +157,21 @@ span.icon{
     font-size: 16px;
 }
 
+.about-info{
+    font-family: "comfortaaregular", Verdana, Arial, sans-serif;
+    font-size: 15px;
+    color: #414147;
+}
+
+.about-info p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.header{
+    font-size: 24px;
+    color: #ffd844;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
