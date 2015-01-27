@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/grid.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/nivo-slider.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/nivo-slider-theme.css" media="all">
+    <link rel="stylesheet" type="text/css" href="libs/fontawesome/css/font-awesome.min.css" media="all">
+    <link rel="stylesheet" type="text/css" href="libs/fancybox/jquery.fancybox.css?v=2.1.5" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript" src="libs/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <script type="text/javascript">
+        $(window).load(function() {
+            $('#slider').nivoSlider({
+                effect: "fade"
+            });
+        });
+        $(function() {
+            $(".fancybox").fancybox({
+                helpers: {
+                    title: {
+                        type: 'inside'
+                    }
+                },
+                beforeLoad: function(){
+                    var prefix, title = "";
+
+                    title = "<b>" + $(this.element).siblings("p.product-title").text() + "</b>";
+                    title += "<br />" + $(this.element).siblings("div.package-info").text();
+
+                    $(this.element).siblings("div.product-info-container-last").children("div.product-info").each(function(id){
+                        if (id == 0)
+                        {
+                            prefix = "Тегло: ";
+                        }
+                        else if (id == 1)
+                        {
+                            prefix = "Брой в кашон: ";
+                        }
+                        else
+                        {
+                            prefix = "Трайност: ";
+                        }
+                        title += ", " + prefix + $(this).text();
+                    });
+                    this.title = title;
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+
+<div class="container_12" id="main-container">
+    <!-- Start header -->
+    <div class="grid_2" id="logo">
+        <header>
+            <a href="#"><img src="images/logo.jpg" border="0" alt="Shocoteam Logo" /></a>
+        </header>
+    </div>
+    <div class="push_4 grid_6" id="navigation">
+        <nav>
+            <ul>
+                <li><a href="index.html">НАЧАЛО</a></li>
+                <li class="active"><a href="#">ПРОДУКТИ</a></li>
+                <li><a href="#">ЗА НАС</a></li>
+                <li><a href="#">КОНТАКТИ</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- End of header -->
+    <div class="clear"></div>
+    <!-- Start Slider -->
+    <div class="slider-wrapper theme-default">
+        <div id="slider" class="nivoSlider">
+            <img src="images/slide1.jpg" alt="" />
+            <img src="images/slide2.jpg" alt="" />
+            <img src="images/slide3.jpg" alt="" />
+            <img src="images/slide4.jpg" alt="" />
+            <img src="images/slide5.jpg" alt="" />
+            <img src="images/slide6.jpg" alt="" />
+            <img src="images/slide7.jpg" alt="" />
+            <img src="images/slide8.jpg" alt="" />
+            <img src="images/slide9.jpg" alt="" />
+        </div>
+    </div>
+    <!-- End Slider -->
+    <div class="grid_4">
+        <div class="product-container">
+            <a href="images/catalog/product1_big.jpg" rel="catatog" class="fancybox"><img src="images/catalog/product1.jpg" alt=""/></a>
+            <p class="product-title">Вафли Фокус карамел</p>
+            <div class="package-info">4 вафли в упаковка</div>
+            <div class="product-info-container">
+                <div class="product-info">Тегло</div>
+                <div class="product-info">Брой в кашон</div>
+                <div class="product-info">Трайност</div>
+            </div>
+            <div class="product-info-container product-info-container-last">
+                <div class="product-info">106 гр</div>
+                <div class="product-info">100 бр</div>
+                <div class="product-info">180 дни</div>
+            </div>
+        </div>
+    </div>
+    <div class="grid_4">
+        <div class="product-container">
+            <a href="images/catalog/product2_big.jpg" rel="catatog" class="fancybox"><img src="images/catalog/product2.jpg" alt="" /></a>
+            <p class="product-title">Вафли Фокус портокал</p>
+            <div class="package-info">5 вафли в упаковка</div>
+            <div class="product-info-container">
+                <div class="product-info">Тегло</div>
+                <div class="product-info">Брой в кашон</div>
+                <div class="product-info">Трайност</div>
+            </div>
+            <div class="product-info-container product-info-container-last">
+                <div class="product-info">116 гр</div>
+                <div class="product-info">130 бр</div>
+                <div class="product-info">150 дни</div>
+            </div>
+        </div>
+    </div>
+    <div class="grid_4">
+        <div class="product-container">
+            <a href="images/catalog/product3_big.jpg" rel="catatog" class="fancybox"><img src="images/catalog/product3.jpg" alt="" /></a>
+            <p class="product-title">Вафли Фокус ягода</p>
+            <div class="package-info">4 вафли в упаковка</div>
+            <div class="product-info-container">
+                <div class="product-info">Тегло</div>
+                <div class="product-info">Брой в кашон</div>
+                <div class="product-info">Трайност</div>
+            </div>
+            <div class="product-info-container product-info-container-last">
+                <div class="product-info">106 гр</div>
+                <div class="product-info">100 бр</div>
+                <div class="product-info">180 дни</div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="grid_4">
+        <div class="product-container">
+            <img src="images/catalog/product1.jpg" alt="" />
+            <p class="product-title">Вафли Фокус ягода</p>
+            <div class="package-info">4 вафли в упаковка</div>
+            <div class="product-info-container">
+                <div class="product-info">Тегло</div>
+                <div class="product-info">Брой в кашон</div>
+                <div class="product-info">Трайност</div>
+            </div>
+            <div class="product-info-container product-info-container-last">
+                <div class="product-info">106 гр</div>
+                <div class="product-info">100 бр</div>
+                <div class="product-info">180 дни</div>
+            </div>
+        </div>
+    </div>
+    <div class="grid_4">
+        <div class="product-container">
+            <img src="images/catalog/product1.jpg" alt="" />
+            <p class="product-title">Вафли Фокус ягода</p>
+            <div class="package-info">4 вафли в упаковка</div>
+            <div class="product-info-container">
+                <div class="product-info">Тегло</div>
+                <div class="product-info">Брой в кашон</div>
+                <div class="product-info">Трайност</div>
+            </div>
+            <div class="product-info-container product-info-container-last">
+                <div class="product-info">106 гр</div>
+                <div class="product-info">100 бр</div>
+                <div class="product-info">180 дни</div>
+            </div>
+        </div>
+    </div>
+    <div class="grid_4">
+        <div class="product-container">
+            <img src="images/catalog/product1.jpg" alt="" />
+            <p class="product-title">Вафли Фокус ягода</p>
+            <div class="package-info">4 вафли в упаковка</div>
+            <div class="product-info-container">
+                <div class="product-info">Тегло</div>
+                <div class="product-info">Брой в кашон</div>
+                <div class="product-info">Трайност</div>
+            </div>
+            <div class="product-info-container product-info-container-last">
+                <div class="product-info">106 гр</div>
+                <div class="product-info">100 бр</div>
+                <div class="product-info">180 дни</div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="container_12" id="contact-information">
+    <div class="grid_4 push_8">
+        <div class="contact-short">
+            <h4>Контактна информация</h4>
+            <div class="table-container">
+                <div>
+                    <span class="icon"><i class="fa fa-map-marker"></i></span>
+                </div>
+                <div>
+                    Индустриална зона Голеш 1, Стара Загора 6000, България
+                </div>
+            </div>
+            <div class="table-container">
+                <div>
+                    <span class="icon"><i class="fa fa-phone"></i></span>
+                </div>
+                <div>
+                    +359 42 64 20 65<br />+359 42 61 90 61
+                </div>
+            </div>
+            <div class="table-container">
+                <div>
+                    <span class="icon"><i class="fa fa-envelope-o"></i></span>
+                </div>
+                <div>
+                    office@chocoteam-bg.com
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container_12" id="footer">
+    <footer>
+        <div class="grid_4">
+            <span class="copy-info">&copy; Copyright 2015 ChocoTeam All Rights Reserved</span>
+        </div>
+        <div class="grid_5 prefix_3">
+            <ul class="bottom-navigation">
+                <li><a href="index.html">НАЧАЛО</a></li>
+                <li><a href="#">ПРОДУКТИ</a></li>
+                <li><a href="#">ЗА НАС</a></li>
+                <li><a href="#">КОНТАКТИ</a></li>
+            </ul>
+
+        </div>
+    </footer>
+</div>
+</body>
+</html>
