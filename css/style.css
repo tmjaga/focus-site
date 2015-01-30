@@ -16,6 +16,10 @@ html {
     padding: 0;
 }
 
+a {
+    outline: none;
+}
+
 #main-container {
     background-color: #B68EC0;
 }
@@ -134,7 +138,6 @@ h4{
     font-size: 11px;
 }
 
-
 .btn-more{
     height: 17px;
     width: 70px;
@@ -219,7 +222,7 @@ span.icon{
     text-align: justify;
     line-height: 0;
     font-size: 1px;
-    text-justify: newspaper;
+    text-justify: distribute;
     zoom:1;
     text-align-last: justify;
     color: #5A287F;
@@ -227,7 +230,7 @@ span.icon{
 
 .product-info-container:after{
     width: 100%;
-    height: 0px;
+    height: 0;
     visibility: hidden;
     overflow: hidden;
     content: '';
@@ -239,4 +242,16 @@ span.icon{
     padding-top: 5px;
     padding-bottom: 5px;
     color: #FFFFFF;
+}
+
+.product-orange {
+    background-color: #F57A31;
+}
+
+.product-orange-text {
+    color: #F57A31;
+}
+
+.product-orange-border {
+    border: #F57A31 1px solid;
 }
