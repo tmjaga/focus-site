@@ -255,3 +255,12 @@ span.icon{
 .product-orange-border {
     border: #F57A31 1px solid;
 }
+
+/* Language Bar*/
+
+#language-bar{
+    background-color: #741472;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: right;
+}
