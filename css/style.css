@@ -264,3 +264,9 @@ span.icon{
     padding-bottom: 1px;
     text-align: right;
 }
+
+.contact-info-title{
+    text-align: right;
+    font-weight: bold;
+    padding-right: 5px;
+}
