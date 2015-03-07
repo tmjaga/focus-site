@@ -24,22 +24,6 @@ a {
     background-color: #B68EC0;
 }
 
-.align-container{
-    width: 100%;
-}
-
-.iso-image
-{
-    text-align: center;
-    font-family: "comfortaaregular", Verdana, Arial, sans-serif;
-    font-size: 12px;
-    color: #414147;
-}
-.iso-image img{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
 .table-container{
     display: table;
     margin-bottom: 5px;
@@ -54,12 +38,12 @@ a {
 #logo {
     height: 90px;
     line-height: 90px;
-    margin-left: 22px;
 }
 
 #navigation {
     height: 90px;
     line-height: 90px;
+    text-align: right;
 }
 
 nav ul li {
@@ -85,10 +69,18 @@ nav ul li.active a, nav ul li a:hover {
     text-align: center;
     font-size: 22px;
     color: #414147;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-#slogan span {
+#slogan h2 {
     font-size: 15px;
+    font-weight: normal;
+}
+
+#slogan h3 {
+    font-size: 12px;
+    font-weight: normal;
 }
 
 footer{
@@ -105,9 +97,17 @@ footer{
     line-height: 10px;
 }
 
+.bottom-menu{
+    text-align: right;
+}
+
 .bottom-navigation li{
     display: inline;
-    margin-right: 40px;
+    margin-right: 25px;
+}
+
+.bottom-navigation li a{
+    padding: 0 5px;
 }
 
 .bottom-navigation li a, .bottom-navigation li a:visited {
@@ -133,27 +133,9 @@ h4{
     margin-bottom: 5px;
 }
 
-.about-short, .contact-short{
+.contact-short{
     font-family: Tahoma, Arial, Verdana, helvetica, sans-serif;
     font-size: 11px;
-}
-
-.btn-more{
-    height: 17px;
-    width: 70px;
-    padding-top: 5px;
-    padding-left: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    background: url("../images/button_bg.jpg") repeat-x;
-    float: right;
-}
-
-.btn-more a, .btn-more a:hover, .btn-more a:visited{
-    font-family: Arial, Verdana, helvetica, sans-serif;
-    font-size: 11px;
-    color: #FFFFFF;
-    text-decoration: none;
 }
 
 span.icon{
@@ -174,8 +156,6 @@ span.icon{
 .header{
     font-size: 24px;
     color: #ffd844;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 /* Product catalog styles */
@@ -269,4 +249,28 @@ span.icon{
     text-align: right;
     font-weight: bold;
     padding-right: 5px;
+}
+
+/* 404 Page */
+.error-title{
+    font-family: Arial, Verdana, helvetica, sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    color: #414147;
+}
+
+.error-info{
+    font-family: "comfortaaregular", Verdana, Arial, sans-serif;
+    font-size: 15px;
+    color: #414147;
+    font-weight: bold;
+}
+
+.error-info a, .error-info a:visited{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.error-info a:hover{
+    text-decoration: underline;
 }

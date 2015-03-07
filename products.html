@@ -16,77 +16,24 @@
     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
     <script type="text/javascript" src="libs/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
-    <script type="text/javascript">
-        $(window).load(function() {
-            $('#slider').nivoSlider({
-                effect: "fade"
-            });
-        });
-        $(function() {
-            $(".fancybox").fancybox({
-                helpers: {
-                    title: {
-                        type: 'inside'
-                    },
-                    overlay: {
-                        locked: false
-                    }
-                },
-                beforeLoad: function(){
-                    var prefix, title = "";
-
-                    title = "<b>" + $(this.element).siblings("p.product-title").text() + "</b><br />";
-                    var packageInfo = $(this.element).siblings("div.package-info").text();
-                    if ($.trim(packageInfo) != "")
-                    {
-                        title += packageInfo;
-                    }
-                    $(this.element).siblings("div.product-info-container-last").children("div.product-info").each(function(id){
-                        if (id == 0)
-                        {
-                            prefix = "Тегло: ";
-                        }
-                        else if (id == 1)
-                        {
-                            prefix = "Брой в кашон: ";
-                        }
-                        else
-                        {
-                            prefix = "Трайност: ";
-                        }
-                        if ($.trim(packageInfo) != "")
-                        {
-                            title += ", " + prefix + $(this).text();
-                        }
-                        else
-                        {
-                            title += "  " + prefix + $(this).text();
-                        }
-                    });
-                    this.title = title;
-                }
-            });
-        });
-    </script>
+    <script type="text/javascript" src="js/common.js"></script>
 </head>
 <body>
 <div class="container_12" id="language-bar">
-    <a href="index.html"><img src="images/bg.png" alt="Bulgarian" border="0" /></a>&nbsp;<a href="en/index.html"><img src="images/en.png" alt="English" border="0" /></a>
+    <a href="index"><img src="images/bg.png" alt="Bulgarian" border="0" /></a>&nbsp;<a href="en/index"><img src="images/en.png" alt="English" border="0" /></a>
 </div>
 <div class="container_12" id="main-container">
     <!-- Start header -->
-    <div class="grid_2" id="logo">
-        <header>
-            <a href="#"><img src="images/logo.jpg" border="0" alt="Shocoteam Logo" /></a>
-        </header>
+    <div class="grid_6" id="logo">
+        <a href="#"><img src="images/logo.jpg" border="0" alt="Chocoteam Logo" /></a>
     </div>
-    <div class="push_4 grid_6" id="navigation">
+    <div class="grid_6" id="navigation">
         <nav>
             <ul>
-                <li><a href="index.html">НАЧАЛО</a></li>
+                <li><a href="index">НАЧАЛО</a></li>
                 <li class="active"><a href="#">ПРОДУКТИ</a></li>
-                <li><a href="about.html">ЗА НАС</a></li>
-                <li><a href="contact.html">КОНТАКТИ</a></li>
+                <li><a href="about">ЗА НАС</a></li>
+                <li><a href="contact">КОНТАКТИ</a></li>
             </ul>
         </nav>
     </div>
@@ -110,7 +57,7 @@
     <div class="grid_4">
         <div class="product-container">
             <a href="images/catalog/s1.jpg" rel="catatog" class="fancybox"><img src="images/catalog/s1m.jpg" alt=""/></a>
-            <p class="product-title">Вафли фокус с течен шоколад</p>
+            <p class="product-title">Вафли Фокус с течен шоколад</p>
             <div class="package-info">6 вафли в опаковка</div>
             <div class="product-info-container">
                 <div class="product-info">Тегло</div>
@@ -118,7 +65,7 @@
                 <div class="product-info">Трайност</div>
             </div>
             <div class="product-info-container product-info-container-last">
-                <div class="product-info">145 гр</div>
+                <div class="product-info">148 гр</div>
                 <div class="product-info">48 бр</div>
                 <div class="product-info">180 дни</div>
             </div>
@@ -127,7 +74,7 @@
     <div class="grid_4">
         <div class="product-container">
             <a href="images/catalog/s16.jpg" rel="catatog" class="fancybox"><img src="images/catalog/s16m.jpg" alt="" /></a>
-            <p class="product-title">Вафли фокус ягода</p>
+            <p class="product-title">Вафли Фокус ягода</p>
             <div class="package-info">4 вафли в опаковка</div>
             <div class="product-info-container">
                 <div class="product-info">Тегло</div>
@@ -144,7 +91,7 @@
     <div class="grid_4">
         <div class="product-container">
             <a href="images/catalog/s18.jpg" rel="catatog" class="fancybox"><img src="images/catalog/s18m.jpg" alt="" /></a>
-            <p class="product-title">Вафли фокус лимон</p>
+            <p class="product-title">Вафли Фокус лимон</p>
             <div class="package-info">4 вафли в опаковка</div>
             <div class="product-info-container">
                 <div class="product-info">Тегло</div>
@@ -162,15 +109,15 @@
     <div class="grid_4">
         <div class="product-container">
             <a href="images/catalog/s14.jpg" rel="catatog" class="fancybox"><img src="images/catalog/s14m.jpg" alt="" /></a>
-            <p class="product-title">Вафли фокус шоколад</p>
-            <div class="package-info">21 мини вафлички в опаковка</div>
+            <p class="product-title">Вафли Фокус шоколад</p>
+            <div class="package-info">24 мини вафлички в опаковка</div>
             <div class="product-info-container">
                 <div class="product-info">Тегло</div>
                 <div class="product-info">Брой в кашон</div>
                 <div class="product-info">Трайност</div>
             </div>
             <div class="product-info-container product-info-container-last">
-                <div class="product-info">220 гр</div>
+                <div class="product-info">260 гр</div>
                 <div class="product-info">24 бр</div>
                 <div class="product-info">180 дни</div>
             </div>
@@ -179,15 +126,15 @@
     <div class="grid_4">
         <div class="product-container">
             <a href="images/catalog/s20.jpg" rel="catatog" class="fancybox"><img src="images/catalog/s20m.jpg" alt="" /></a>
-            <p class="product-title">Вафли фокус портокал</p>
-            <div class="package-info">21 мини вафлички в опаковка</div>
+            <p class="product-title">Вафли Фокус портокал</p>
+            <div class="package-info">24 мини вафлички в опаковка</div>
             <div class="product-info-container">
                 <div class="product-info">Тегло</div>
                 <div class="product-info">Брой в кашон</div>
                 <div class="product-info">Трайност</div>
             </div>
             <div class="product-info-container product-info-container-last">
-                <div class="product-info">220 гр</div>
+                <div class="product-info">260 гр</div>
                 <div class="product-info">24 бр</div>
                 <div class="product-info">180 дни</div>
             </div>
@@ -197,14 +144,14 @@
         <div class="product-container">
             <a href="images/catalog/s13.jpg" rel="catatog" class="fancybox"><img src="images/catalog/s13m.jpg" alt="" /></a>
             <p class="product-title">Вафли Фокус ягода</p>
-            <div class="package-info">21 мини вафлички в опаковка</div>
+            <div class="package-info">24 мини вафлички в опаковка</div>
             <div class="product-info-container">
                 <div class="product-info">Тегло</div>
                 <div class="product-info">Брой в кашон</div>
                 <div class="product-info">Трайност</div>
             </div>
             <div class="product-info-container product-info-container-last">
-                <div class="product-info">220 гр</div>
+                <div class="product-info">260 гр</div>
                 <div class="product-info">24 бр</div>
                 <div class="product-info">180 дни</div>
             </div>
@@ -214,15 +161,15 @@
     <div class="grid_4">
         <div class="product-container">
             <a href="images/catalog/s11.jpg" rel="catatog" class="fancybox"><img src="images/catalog/s11m.jpg" alt="" /></a>
-            <p class="product-title">Вафли фокус ванилия</p>
-            <div class="package-info">21 мини вафлички в опаковка</div>
+            <p class="product-title">Вафли Фокус ванилия</p>
+            <div class="package-info">24 мини вафлички в опаковка</div>
             <div class="product-info-container">
                 <div class="product-info">Тегло</div>
                 <div class="product-info">Брой в кашон</div>
                 <div class="product-info">Трайност</div>
             </div>
             <div class="product-info-container product-info-container-last">
-                <div class="product-info">220 гр</div>
+                <div class="product-info">260 гр</div>
                 <div class="product-info">24 бр</div>
                 <div class="product-info">180 дни</div>
             </div>
@@ -231,15 +178,15 @@
     <div class="grid_4">
         <div class="product-container">
             <a href="images/catalog/s12.jpg" rel="catatog" class="fancybox"><img src="images/catalog/s12m.jpg" alt="" /></a>
-            <p class="product-title">Вафли фокус лимон</p>
-            <div class="package-info">21 мини вафлички в опаковка</div>
+            <p class="product-title">Вафли Фокус лимон</p>
+            <div class="package-info">24 мини вафлички в опаковка</div>
             <div class="product-info-container">
                 <div class="product-info">Тегло</div>
                 <div class="product-info">Брой в кашон</div>
                 <div class="product-info">Трайност</div>
             </div>
             <div class="product-info-container product-info-container-last">
-                <div class="product-info">220 гр</div>
+                <div class="product-info">260 гр</div>
                 <div class="product-info">24 бр</div>
                 <div class="product-info">180 дни</div>
             </div>
@@ -248,15 +195,15 @@
     <div class="grid_4">
         <div class="product-container">
             <a href="images/catalog/s15.jpg" rel="catatog" class="fancybox"><img src="images/catalog/s15m.jpg" alt="" /></a>
-            <p class="product-title">Вафли фокус карамел</p>
-            <div class="package-info">21 мини вафлички в опаковка</div>
+            <p class="product-title">Вафли Фокус карамел</p>
+            <div class="package-info">24 мини вафлички в опаковка</div>
             <div class="product-info-container">
                 <div class="product-info">Тегло</div>
                 <div class="product-info">Брой в кашон</div>
                 <div class="product-info">Трайност</div>
             </div>
             <div class="product-info-container product-info-container-last">
-                <div class="product-info">220 гр</div>
+                <div class="product-info">260 гр</div>
                 <div class="product-info">24 бр</div>
                 <div class="product-info">180 дни</div>
             </div>
@@ -266,7 +213,7 @@
     <div class="grid_4">
         <div class="product-container">
             <a href="images/catalog/s24.jpg" rel="catatog" class="fancybox"><img src="images/catalog/s24m.jpg" alt="" /></a>
-            <p class="product-title">Вафли фокус мини бокс шоколад</p>
+            <p class="product-title">Вафли Фокус мини бокс шоколад</p>
             <div class="package-info">24 мини вафлички в кутия</div>
             <div class="product-info-container">
                 <div class="product-info">Тегло</div>
@@ -283,7 +230,7 @@
     <div class="grid_4">
         <div class="product-container">
             <a href="images/catalog/s9.jpg" rel="catatog" class="fancybox"><img src="images/catalog/s9m.jpg" alt="" /></a>
-            <p class="product-title">Вафли фокус мини бокс кокос</p>
+            <p class="product-title">Вафли Фокус мини бокс кокос</p>
             <div class="package-info">24 мини вафлички в кутия</div>
             <div class="product-info-container">
                 <div class="product-info">Тегло</div>
@@ -300,7 +247,7 @@
     <div class="grid_4">
         <div class="product-container">
             <a href="images/catalog/s10.jpg" rel="catatog" class="fancybox"><img src="images/catalog/s10m.jpg" alt="" /></a>
-            <p class="product-title">Вафли фокус мини бокс  карамел</p>
+            <p class="product-title">Вафли Фокус мини бокс  карамел</p>
             <div class="package-info">24 мини вафлички в кутия</div>
             <div class="product-info-container">
                 <div class="product-info">Тегло</div>
@@ -318,7 +265,7 @@
     <div class="grid_4">
         <div class="product-container">
             <a href="images/catalog/s8.jpg" rel="catatog" class="fancybox"><img src="images/catalog/s8m.jpg" alt="" /></a>
-            <p class="product-title">Вафли фокус мини бокс лимон</p>
+            <p class="product-title">Вафли Фокус мини бокс лимон</p>
             <div class="package-info">24 мини вафлички в кутия</div>
             <div class="product-info-container">
                 <div class="product-info">Тегло</div>
@@ -335,7 +282,7 @@
     <div class="grid_4">
         <div class="product-container">
             <a href="images/catalog/s7.jpg" rel="catatog" class="fancybox"><img src="images/catalog/s7m.jpg" alt="" /></a>
-            <p class="product-title">Вафли фокус мини бокс ягода</p>
+            <p class="product-title">Вафли Фокус мини бокс ягода</p>
             <div class="package-info">24 мини вафлички в кутия</div>
             <div class="product-info-container">
                 <div class="product-info">Тегло</div>
@@ -352,7 +299,7 @@
     <div class="grid_4">
         <div class="product-container">
             <a href="images/catalog/s6.jpg" rel="catatog" class="fancybox"><img src="images/catalog/s6m.jpg" alt="" /></a>
-            <p class="product-title">Вафли фокус без захар двоен шоколад</p>
+            <p class="product-title">Вафли Фокус без захар двоен шоколад</p>
             <div class="package-info">2 опаковки х 4 мини вафлички в кутия</div>
             <div class="product-info-container">
                 <div class="product-info">Тегло</div>
@@ -370,7 +317,7 @@
     <div class="grid_4">
         <div class="product-container">
             <a href="images/catalog/s4.jpg" rel="catatog" class="fancybox"><img src="images/catalog/s4m.jpg" alt="" /></a>
-            <p class="product-title">Вафли фокус без захар свежа ягода</p>
+            <p class="product-title">Вафли Фокус без захар свежа ягода</p>
             <div class="package-info">2 опаковки х 4 мини вафлички в кутия</div>
             <div class="product-info-container">
                 <div class="product-info">Тегло</div>
@@ -387,7 +334,7 @@
     <div class="grid_4">
         <div class="product-container">
             <a href="images/catalog/s5.jpg" rel="catatog" class="fancybox"><img src="images/catalog/s5m.jpg" alt="" /></a>
-            <p class="product-title">Вафли фокус без захар лешник</p>
+            <p class="product-title">Вафли Фокус без захар лешник</p>
             <div class="package-info">2 опаковки х 4 мини вафлички в кутия</div>
             <div class="product-info-container">
                 <div class="product-info">Тегло</div>
@@ -422,7 +369,7 @@
     <div class="grid_4">
         <div class="product-container">
             <a href="images/catalog/s17.jpg" rel="catatog" class="fancybox"><img src="images/catalog/s17m.jpg" alt="" /></a>
-            <p class="product-title">Вафли фокус шоколад</p>
+            <p class="product-title">Вафли Фокус шоколад вкусно и изгодно</p>
             <div class="package-info">4 вафли в опаковка</div>
             <div class="product-info-container">
                 <div class="product-info">Тегло</div>
@@ -430,7 +377,7 @@
                 <div class="product-info">Трайност</div>
             </div>
             <div class="product-info-container product-info-container-last">
-                <div class="product-info">92 гр</div>
+                <div class="product-info">106 гр</div>
                 <div class="product-info">72 бр</div>
                 <div class="product-info">180 дни</div>
             </div>
@@ -439,7 +386,7 @@
     <div class="grid_4">
         <div class="product-container">
             <a href="images/catalog/s25.jpg" rel="catatog" class="fancybox"><img src="images/catalog/s25m.jpg" alt="" /></a>
-            <p class="product-title">Вафли фокус с течен шоколад</p>
+            <p class="product-title">Вафли Фокус с течен шоколад</p>
             <div class="package-info">4 вафли в опаковка</div>
             <div class="product-info-container">
                 <div class="product-info">Тегло</div>
@@ -456,7 +403,7 @@
     <div class="grid_4">
         <div class="product-container">
             <a href="images/catalog/s23.jpg" rel="catatog" class="fancybox"><img src="images/catalog/s23m.jpg" alt="" /></a>
-            <p class="product-title">Вафли фокус шоколад</p>
+            <p class="product-title">Вафли Фокус шоколад</p>
             <div class="package-info">18 вафли в кутия</div>
             <div class="product-info-container">
                 <div class="product-info">Тегло</div>
@@ -474,7 +421,7 @@
     <div class="grid_4">
         <div class="product-container">
             <a href="images/catalog/s22.jpg" rel="catatog" class="fancybox"><img src="images/catalog/s22m.jpg" alt="" /></a>
-            <p class="product-title">Вафли фокус лимон</p>
+            <p class="product-title">Вафли Фокус лимон</p>
             <div class="package-info">18 вафли в кутия</div>
             <div class="product-info-container">
                 <div class="product-info">Тегло</div>
@@ -491,7 +438,7 @@
     <div class="grid_4">
         <div class="product-container">
             <a href="images/catalog/s21.jpg" rel="catatog" class="fancybox"><img src="images/catalog/s21m.jpg" alt="" /></a>
-            <p class="product-title">Вафли фокус ванилия</p>
+            <p class="product-title">Вафли Фокус ванилия</p>
             <div class="package-info">18 вафли в кутия</div>
             <div class="product-info-container">
                 <div class="product-info">Тегло</div>
@@ -508,7 +455,7 @@
     <div class="grid_4">
         <div class="product-container">
             <a href="images/catalog/s32.jpg" rel="catatog" class="fancybox"><img src="images/catalog/s32m.jpg" alt="" /></a>
-            <p class="product-title">Вафли фокус ягода</p>
+            <p class="product-title">Вафли Фокус ягода</p>
             <div class="package-info">16 вафли в опаковка</div>
             <div class="product-info-container">
                 <div class="product-info">Тегло</div>
@@ -526,7 +473,7 @@
     <div class="grid_4">
         <div class="product-container">
             <a href="images/catalog/s31.jpg" rel="catatog" class="fancybox"><img src="images/catalog/s31m.jpg" alt="" /></a>
-            <p class="product-title">Вафли фокус лимон</p>
+            <p class="product-title">Вафли Фокус лимон</p>
             <div class="package-info">16 вафли в опаковка</div>
             <div class="product-info-container">
                 <div class="product-info">Тегло</div>
@@ -543,7 +490,7 @@
     <div class="grid_4">
         <div class="product-container">
             <a href="images/catalog/s31.jpg" rel="catatog" class="fancybox"><img src="images/catalog/s31m.jpg" alt="" /></a>
-            <p class="product-title">Вафли фокус шоколад</p>
+            <p class="product-title">Вафли Фокус шоколад</p>
             <div class="package-info">16 вафли в опаковка</div>
             <div class="product-info-container">
                 <div class="product-info">Тегло</div>
@@ -560,7 +507,7 @@
     <div class="grid_4">
         <div class="product-container product-orange-border">
             <a href="images/catalog/s29.jpg" rel="catatog" class="fancybox"><img src="images/catalog/s29m.jpg" alt="" /></a>
-            <p class="product-title product-orange-text">Мини гевречета фокус мак и сол</p>
+            <p class="product-title product-orange-text">Мини гевречета Фокус мак и сол</p>
             <div class="package-info product-orange">&nbsp;</div>
             <div class="product-info-container product-orange-text">
                 <div class="product-info">Тегло</div>
@@ -578,7 +525,7 @@
     <div class="grid_4">
         <div class="product-container product-orange-border">
             <a href="images/catalog/s28.jpg" rel="catatog" class="fancybox"><img src="images/catalog/s28m.jpg" alt="" /></a>
-            <p class="product-title product-orange-text">Мини гевречета фокус ким и сол</p>
+            <p class="product-title product-orange-text">Мини гевречета Фокус ким и сол</p>
             <div class="package-info product-orange">&nbsp;</div>
             <div class="product-info-container product-orange-text">
                 <div class="product-info">Тегло</div>
@@ -595,7 +542,7 @@
     <div class="grid_4">
         <div class="product-container product-orange-border">
             <a href="images/catalog/s27.jpg" rel="catatog" class="fancybox"><img src="images/catalog/s27m.jpg" alt="" /></a>
-            <p class="product-title product-orange-text">Мини гевречета фокус ванилия</p>
+            <p class="product-title product-orange-text">Мини гевречета Фокус ванилия</p>
             <div class="package-info product-orange">&nbsp;</div>
             <div class="product-info-container product-orange-text">
                 <div class="product-info">Тегло</div>
@@ -612,7 +559,7 @@
     <div class="grid_4">
         <div class="product-container product-orange-border">
             <a href="images/catalog/s29.jpg" rel="catatog" class="fancybox"><img src="images/catalog/s29m.jpg" alt="" /></a>
-            <p class="product-title product-orange-text">Мини гевречета фокус мак и сол</p>
+            <p class="product-title product-orange-text">Мини гевречета Фокус мак и сол</p>
             <div class="package-info product-orange">&nbsp;</div>
             <div class="product-info-container product-orange-text">
                 <div class="product-info">Тегло</div>
@@ -630,7 +577,7 @@
     <div class="grid_4">
         <div class="product-container product-orange-border">
             <a href="images/catalog/s28.jpg" rel="catatog" class="fancybox"><img src="images/catalog/s28m.jpg" alt="" /></a>
-            <p class="product-title product-orange-text">Мини гевречета фокус ким и сол</p>
+            <p class="product-title product-orange-text">Мини гевречета Фокус ким и сол</p>
             <div class="package-info product-orange">&nbsp;</div>
             <div class="product-info-container product-orange-text">
                 <div class="product-info">Тегло</div>
@@ -647,7 +594,7 @@
     <div class="grid_4">
         <div class="product-container product-orange-border">
             <a href="images/catalog/s27.jpg" rel="catatog" class="fancybox"><img src="images/catalog/s27m.jpg" alt="" /></a>
-            <p class="product-title product-orange-text">Мини гевречета фокус ванилия</p>
+            <p class="product-title product-orange-text">Мини гевречета Фокус ванилия</p>
             <div class="package-info product-orange">&nbsp;</div>
             <div class="product-info-container product-orange-text">
                 <div class="product-info">Тегло</div>
@@ -664,7 +611,7 @@
     <div class="grid_4">
         <div class="product-container product-orange-border">
             <a href="images/catalog/s26.jpg" rel="catatog" class="fancybox"><img src="images/catalog/s26m.jpg" alt="" /></a>
-            <p class="product-title product-orange-text">Дърпани гевречета фокус мак и сол</p>
+            <p class="product-title product-orange-text">Дърпани гевречета Фокус мак и сол</p>
             <div class="package-info product-orange">&nbsp;</div>
             <div class="product-info-container product-orange-text">
                 <div class="product-info">Тегло</div>
@@ -682,7 +629,7 @@
     <div class="grid_4">
         <div class="product-container product-orange-border">
             <a href="images/catalog/s3.jpg" rel="catatog" class="fancybox"><img src="images/catalog/s3m.jpg" alt="" /></a>
-            <p class="product-title product-orange-text">Дърпани гевречета фокус ким и сол</p>
+            <p class="product-title product-orange-text">Дърпани гевречета Фокус ким и сол</p>
             <div class="package-info product-orange">&nbsp;</div>
             <div class="product-info-container product-orange-text">
                 <div class="product-info">Тегло</div>
@@ -699,7 +646,7 @@
     <div class="grid_4">
         <div class="product-container product-orange-border">
             <a href="images/catalog/s2.jpg" rel="catatog" class="fancybox"><img src="images/catalog/s2m.jpg" alt="" /></a>
-            <p class="product-title product-orange-text">Дърпани гевречета фокус ванилия и сусам</p>
+            <p class="product-title product-orange-text">Дърпани гевречета Фокус ванилия и сусам</p>
             <div class="package-info product-orange">&nbsp;</div>
             <div class="product-info-container product-orange-text">
                 <div class="product-info">Тегло</div>
@@ -749,15 +696,15 @@
 </div>
 <div class="container_12" id="footer">
     <footer>
-        <div class="grid_4">
+        <div class="grid_6">
             <span class="copy-info">&copy; Copyright 2015 ChocoTeam All Rights Reserved</span>
         </div>
-        <div class="grid_5 prefix_3">
+        <div class="grid_6 bottom-menu">
             <ul class="bottom-navigation">
-                <li><a href="index.html">НАЧАЛО</a></li>
+                <li><a href="index">НАЧАЛО</a></li>
                 <li><a href="#">ПРОДУКТИ</a></li>
-                <li><a href="about.html">ЗА НАС</a></li>
-                <li><a href="contact.html">КОНТАКТИ</a></li>
+                <li><a href="about">ЗА НАС</a></li>
+                <li><a href="contact">КОНТАКТИ</a></li>
             </ul>
 
         </div>
