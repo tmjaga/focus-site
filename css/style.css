@@ -177,6 +177,10 @@ span.icon{
     margin-bottom: 5px;
 }
 
+.product-title-smaller{
+    font-size: 12px;
+}
+
 .package-info{
     background-color: #5A287F;
     color: #ffffff;

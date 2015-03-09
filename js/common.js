@@ -23,19 +23,10 @@ $(function() {
             {
                 title += packageInfo;
             }
-            $(this.element).siblings("div.product-info-container-last").children("div.product-info").each(function(id){
-                if (id == 0)
-                {
-                    prefix = "Тегло: ";
-                }
-                else if (id == 1)
-                {
-                    prefix = "Брой в кашон: ";
-                }
-                else
-                {
-                    prefix = "Трайност: ";
-                }
+            $(this.element).siblings("div.product-info-container-last").children("div.product-info").each(function(id)
+            {
+                prefix = $(this).parent("div.product-info-container").prev("div.product-info-container").children("div.product-info:eq("+id+")").text();
+                prefix += ": ";
                 if ($.trim(packageInfo) != "")
                 {
                     title += ", " + prefix + $(this).text();
@@ -48,7 +39,6 @@ $(function() {
             this.title = title;
         }
     });
-
     $("#iso-image").fancybox({
         helpers: {
             overlay: {
