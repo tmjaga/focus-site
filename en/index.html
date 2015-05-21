@@ -2,18 +2,20 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>ChocoTeam - Contacts</title>
+    <title>ChocoTeam - Home</title>
     <link rel="stylesheet" type="text/css" href="../css/reset.css" media="all">
     <link rel="stylesheet" type="text/css" href="../css/grid.css" media="all">
     <link rel="stylesheet" type="text/css" href="../css/nivo-slider.css" media="all">
     <link rel="stylesheet" type="text/css" href="../css/nivo-slider-theme.css" media="all">
     <link rel="stylesheet" type="text/css" href="../libs/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../libs/fancybox/jquery.fancybox.css?v=2.1.5" media="screen">
     <link rel="stylesheet" type="text/css" href="../css/style.css" media="all">
     <!--[if lt IE 9]>
     <script src="../js/html5shiv.min.js"></script>
     <![endif]-->
     <script type="text/javascript" src="../js/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="../js/jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript" src="../libs/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
     <script type="text/javascript" src="../js/common.js"></script>
 </head>
 <body>
@@ -23,15 +25,15 @@
 <div class="container_12" id="main-container">
     <!-- Start header -->
     <div class="grid_6" id="logo">
-        <a href="index"><img src="../images/logo_en.jpg" border="0" alt="Chocoteam Logo" /></a>
+        <a href="#"><img src="images/logo.jpg" border="0" alt="Chocoteam Logo" /></a>
     </div>
     <div class="grid_6" id="navigation">
         <nav>
             <ul>
-                <li><a href="index">HOME</a></li>
+                <li class="active"><a href="index">HOME</a></li>
                 <li><a href="products">PRODUCTS</a></li>
                 <li><a href="about">ABOUT US</a></li>
-                <li class="active"><a href="#">CONTACTS</a></li>
+                <li><a href="#">CONTACTS</a></li>
             </ul>
         </nav>
     </div>
@@ -53,27 +55,16 @@
         </div>
     </div>
     <!-- End Slider -->
-    <div class="grid_12 about-info">
-        <p class="header">Contact Information</p>
-        <table cellspacing="0" cellpadding="2" border="2">
-            <tr>
-                <td class="contact-info-title">Address: </td>
-                <td>Industrial Zone Golesh 1, Stara Zagora 6000, Bulgaria</td>
-            </tr>
-            <tr>
-                <td class="contact-info-title">Phone: </td>
-                <td>+359 42 64 20 65, +359 42 61 90 61</td>
-            </tr>
-            <tr>
-                <td class="contact-info-title">Email: </td>
-                <td>office@chocoteam-bg.com</td>
-            </tr>
-        </table>
-        <br/>
+    <div class="grid_12" id="slogan">
+        <p>Welcome to ChocoTeam's site.</p>
+        <p>Here you will find information about our products.</p>
     </div>
 </div>
 <div class="container_12" id="contact-information">
-    <div class="grid_4 push_8">
+    <div class="grid_4">
+        <a id="iso-image" href="../images/iso_sert.jpg"><img src="../images/iso_sm.jpg" border="0" /></a>
+    </div>
+    <div class="grid_4 push_4">
         <div class="contact-short">
             <h4>Contact Information</h4>
             <div class="table-container">
@@ -110,11 +101,12 @@
         </div>
         <div class="grid_6 bottom-menu">
             <ul class="bottom-navigation">
-                <li><a href="index">HOME</a></li>
+                <li><a href="#">HOME</a></li>
                 <li><a href="products">PRODUCTS</a></li>
                 <li><a href="about">ABOUT US</a></li>
-                <li><a href="#">CONTACTS</a></li>
+                <li><a href="contact">CONTACTS</a></li>
             </ul>
+
         </div>
     </footer>
 </div>
